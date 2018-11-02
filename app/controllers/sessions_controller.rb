@@ -9,4 +9,10 @@ class SessionsController < ApplicationController
     def new
     end
 
+    def create
+      session[:username] = params[:username]
+      if session[:username]
+        redirect_to '/'
+    end
+
 end
