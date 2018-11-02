@@ -22,6 +22,7 @@ class SessionsController < ApplicationController
       if session[:name] != nil
         session.delete :name
       end
+      redirect_to '/sessions/new'
     end
 
 end
