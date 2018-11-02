@@ -5,6 +5,6 @@ class SecretsController < ApplicationController
 
 private
   def require_login
-    return head(:forbidden) unless session.include? :username
+    redirect_to '/sessions/new' unless session.include? :username
   end
 end
