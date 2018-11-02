@@ -19,6 +19,7 @@ class SessionsController < ApplicationController
     end
 
     def destroy
+      if session
         session.delete :name
       redirect_to '/sessions/new'
     end
