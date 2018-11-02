@@ -3,9 +3,6 @@ class SessionsController < ApplicationController
       redirect_to "/login"
     end
 
-    def login
-    end
-
     def new
     end
 
