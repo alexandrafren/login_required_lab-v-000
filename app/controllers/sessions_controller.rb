@@ -14,7 +14,7 @@ class SessionsController < ApplicationController
       if session[:username] == "" || session[:username] == nil
         redirect_to '/sessions/new'
       else
-        redirect_to '/secrets/show'
+        redirect_to '/show'
       end
     end
 
