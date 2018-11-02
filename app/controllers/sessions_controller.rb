@@ -13,6 +13,7 @@ class SessionsController < ApplicationController
       session[:username] = params[:username]
       if session[:username]
         redirect_to '/'
+      end
     end
 
 end
